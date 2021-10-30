@@ -23,6 +23,11 @@ public class Controller : MonoBehaviour
         CantCoin.text = Coins.ToString();
         Cantcoints = Coins;
     }
+    void Update()
+    {
+        CantCoin.text = Cantcoints.ToString();
+    }
+
     //Metodo para ver el menu de Personajes 
     public void Characters()
     {
