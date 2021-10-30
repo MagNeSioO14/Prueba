@@ -13,6 +13,9 @@ public class Change_char : MonoBehaviour
     public bool[] unlock;
     //Vector que contiene el valor del personaje
     public int[] Valor;
+    //Vector con los nombes
+    public string[] Names;
+    public Text namestxt;
 
     public GameObject Buy;
     public GameObject play;
@@ -52,6 +55,7 @@ public class Change_char : MonoBehaviour
             play.SetActive(true);
             Characters[Selected].GetComponent<SpriteRenderer>().color = Color.white;
         }
+        namestxt.text = Names[Selected];
         Characters[Selected].SetActive(true);
     }
     //Metodo del boton anterios, en la seleccion de personajes.
@@ -78,6 +82,7 @@ public class Change_char : MonoBehaviour
             play.SetActive(true);
             Characters[Selected].GetComponent<SpriteRenderer>().color = Color.white;
         }
+        namestxt.text = Names[Selected];
 
         Characters[Selected].SetActive(true);
     }
